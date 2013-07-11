@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable comment="Flag used in card selection conditional" constant="0" name="selected_frame" sid="1421405033998842" static="0" type="number">0</variable>
+        <event-block sid="1689121547883047">
+            <conditions>
+                <condition id="-18" name="On created" sid="7419464732090652" type="Card" />
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="5739895459755233" type="Card" />
+            </actions>
+        </event-block>
+        <event-group description="" sid="8693777074748713" title="Card selection">
+            <sub-events>
+                <event-block sid="8881376167082503">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="8355944225771661" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Card</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="1418144990776485" type="System">
+                            <param id="0" name="Variable">selected_frame</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8271878867052546">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="5791612442074411" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Card</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="8053138914628269" type="Card">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="374733468061877" type="System">
+                            <param id="0" name="Variable">selected_frame</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="1985521974088902" type="Card">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7932408574986067">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="5551123066422447" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Card</param>
+                        </condition>
+                        <condition id="3" inverted="1" name="Compare frame" sid="8151190907226308" type="Card">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="7103686339554871" type="System">
+                            <param id="0" name="Variable">selected_frame</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="3018621478777552" type="System">
+                            <param id="0" name="Variable">selected_frame</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="6483212733249173" type="Card">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="2910546078425478">
+            <conditions />
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>
