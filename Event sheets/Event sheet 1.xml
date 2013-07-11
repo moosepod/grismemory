@@ -47,7 +47,11 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="5" name="Set frame" sid="1985521974088902" type="Card">
-                            <param id="0" name="Frame number">1</param>
+                            <param id="0" name="Frame number">card.cardtype</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="4136415495473901" type="Card">
+                            <param id="0" name="Instance variable">selected</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -76,13 +80,64 @@
                         <action id="5" name="Set frame" sid="6483212733249173" type="Card">
                             <param id="0" name="Frame number">0</param>
                         </action>
+                        <action id="-10" name="Set value" sid="8719232729476423" type="Card">
+                            <param id="0" name="Instance variable">selected</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="2910546078425478">
-            <conditions />
-            <actions />
-        </event-block>
+        <event-group description="" sid="1791754939148845" title="Debug">
+            <sub-events>
+                <event-block sid="8776959876217994">
+                    <conditions>
+                        <condition id="0" name="On click" sid="3572075157942868" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="2533154232111735" type="Debug">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7747831382385503">
+                    <conditions>
+                        <condition id="3" name="On button released" sid="4403036092590224" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="1713892737368948">
+                            <conditions>
+                                <condition id="-11" name="For Each" sid="9402693532343527" type="System">
+                                    <param id="0" name="Object">Card</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="9531260607900809">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="549846530840339" type="Card">
+                                            <param id="0" name="Instance variable">selected</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="1" name="Append text" sid="4775995586556661" type="Debug">
+                                            <param id="0" name="Text">Card.IID &amp; &quot; : &quot; &amp; card.selected &amp; &quot;, &quot; </param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
