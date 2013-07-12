@@ -43,7 +43,7 @@
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable comment="Used to differentiate types of cards for matching. Also the frame index in the animation for the image we want." name="cardtype" sid="3505314124754735" type="number" />
-                <instance-variable name="selected" sid="4225548516089002" type="number" />
+                <instance-variable name="card_flipped" sid="4225548516089002" type="number" />
             </instance-variables>
             <animation-folder expanded="1">
                 <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="9693843338751685" speed="5">

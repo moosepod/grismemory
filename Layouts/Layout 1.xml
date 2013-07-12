@@ -36,7 +36,7 @@
                     </properties>
                     <instance-variables>
                         <cardtype>1</cardtype>
-                        <selected>0</selected>
+                        <card_flipped>0</card_flipped>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -89,7 +89,7 @@
                     </properties>
                     <instance-variables>
                         <cardtype>2</cardtype>
-                        <selected>0</selected>
+                        <card_flipped>0</card_flipped>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -115,7 +115,7 @@
                     </properties>
                     <instance-variables>
                         <cardtype>1</cardtype>
-                        <selected>0</selected>
+                        <card_flipped>0</card_flipped>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -141,7 +141,7 @@
                     </properties>
                     <instance-variables>
                         <cardtype>3</cardtype>
-                        <selected>0</selected>
+                        <card_flipped>0</card_flipped>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -167,7 +167,7 @@
                     </properties>
                     <instance-variables>
                         <cardtype>3</cardtype>
-                        <selected>0</selected>
+                        <card_flipped>0</card_flipped>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -193,7 +193,7 @@
                     </properties>
                     <instance-variables>
                         <cardtype>2</cardtype>
-                        <selected>0</selected>
+                        <card_flipped>0</card_flipped>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -219,7 +219,7 @@
                     </properties>
                     <instance-variables>
                         <cardtype>4</cardtype>
-                        <selected>0</selected>
+                        <card_flipped>0</card_flipped>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -245,7 +245,7 @@
                     </properties>
                     <instance-variables>
                         <cardtype>4</cardtype>
-                        <selected>0</selected>
+                        <card_flipped>0</card_flipped>
                     </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>

@@ -60,7 +60,7 @@
                             <param id="0" name="Frame number">card.cardtype</param>
                         </action>
                         <action id="-10" name="Set value" sid="4136415495473901" type="Card">
-                            <param id="0" name="Instance variable">selected</param>
+                            <param id="0" name="Instance variable">card_flipped</param>
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="-9" name="Set value" sid="8884691432641747" type="System">
@@ -100,7 +100,7 @@
                             <param id="0" name="Frame number">0</param>
                         </action>
                         <action id="-10" name="Set value" sid="8719232729476423" type="Card">
-                            <param id="0" name="Instance variable">selected</param>
+                            <param id="0" name="Instance variable">card_flipped</param>
                             <param id="1" name="Value">0</param>
                         </action>
                         <action id="-9" name="Set value" sid="9346631197809288" type="System">
@@ -142,7 +142,7 @@
                         <event-block sid="1107233915346267">
                             <conditions>
                                 <condition id="-7" name="Compare instance variable" sid="6428312604408837" type="Card">
-                                    <param id="0" name="Instance variable">selected</param>
+                                    <param id="0" name="Instance variable">card_flipped</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">1</param>
                                 </condition>
@@ -170,7 +170,7 @@
                         <event-block sid="6270995480181852">
                             <conditions>
                                 <condition id="-7" name="Compare instance variable" sid="7032920977915187" type="Card">
-                                    <param id="0" name="Instance variable">selected</param>
+                                    <param id="0" name="Instance variable">card_flipped</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">1</param>
                                 </condition>
@@ -203,7 +203,7 @@
                                     <param id="2" name="Second value">-1</param>
                                 </condition>
                                 <condition id="-7" name="Compare instance variable" sid="2072763185391188" type="Card">
-                                    <param id="0" name="Instance variable">selected</param>
+                                    <param id="0" name="Instance variable">card_flipped</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">1</param>
                                 </condition>
@@ -284,7 +284,7 @@
                     </conditions>
                     <actions>
                         <action id="-10" name="Set value" sid="9758564862184403" type="Card">
-                            <param id="0" name="Instance variable">selected</param>
+                            <param id="0" name="Instance variable">card_flipped</param>
                             <param id="1" name="Value">0</param>
                         </action>
                         <action id="5" name="Set frame" sid="9921891574872227" type="Card">
@@ -301,7 +301,7 @@
                     </conditions>
                     <actions>
                         <action id="-10" name="Set value" sid="8720348886476958" type="Card">
-                            <param id="0" name="Instance variable">selected</param>
+                            <param id="0" name="Instance variable">card_flipped</param>
                             <param id="1" name="Value">0</param>
                         </action>
                         <action id="5" name="Set frame" sid="5005810031672981" type="Card">
