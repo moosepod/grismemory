@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Start</name>
+    <events>
+        <comment>Start game when we click anywhere</comment>
+        <event-block sid="1435179905380024">
+            <conditions>
+                <condition id="1" name="On any click" sid="26069300927008" type="Mouse" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="7163890287052546" type="System">
+                    <param id="0" name="Layout">Main Game</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

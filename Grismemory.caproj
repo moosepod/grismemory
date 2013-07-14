@@ -39,6 +39,14 @@
         <prop name="Use iOS retina display">All devices</prop>
     </configuration-settings>
     <object-folder expanded="1">
+        <object-folder expanded="1" name="UI">
+            <object-type name="GameTitle" sid="4852799306981746">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="ClickTosStart" sid="4785696855877438">
+                <plugin id="Text" />
+            </object-type>
+        </object-folder>
         <object-type name="Card" sid="3749644409215317">
             <plugin id="Sprite" />
             <instance-variables>
@@ -71,10 +79,12 @@
     </object-folder>
     <families />
     <layout-folder expanded="1">
-        <layout>Layout 1.xml</layout>
+        <layout>Main Game.xml</layout>
+        <layout>Start.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Main Game.xml</event-sheet>
+        <event-sheet>Start.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="1" />
