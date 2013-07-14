@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Start</name>
-    <sid>4960830493818021</sid>
-    <event-sheet>Start</event-sheet>
+    <name>Great Job</name>
+    <sid>3667704581912412</sid>
+    <event-sheet>Great Job</event-sheet>
     <size>
         <width>1280</width>
         <height>1024</height>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="8827116762632673">
+        <layer name="Layer 0" sid="7452909019822742">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -27,36 +27,9 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="GameTitle" uid="11">
+                <instance type="ClickToStart" uid="13">
                     <properties>
-                        <text>Grismemory!</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-96,400,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>37</x>
-                        <y>95</y>
-                        <z>0</z>
-                        <width>640</width>
-                        <height>132</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="ClickToStart" uid="12">
-                    <properties>
-                        <text>Click to start</text>
+                        <text>Click to play again</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16</font>
                         <color>0,0,0</color>
@@ -69,11 +42,38 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>270</x>
-                        <y>262</y>
+                        <x>271</x>
+                        <y>236</y>
                         <z>0</z>
-                        <width>102</width>
+                        <width>136</width>
                         <height>30</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="GameTitle" uid="14">
+                    <properties>
+                        <text>Great Job!</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-96,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>117</x>
+                        <y>90</y>
+                        <z>0</z>
+                        <width>640</width>
+                        <height>132</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

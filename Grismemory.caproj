@@ -43,7 +43,7 @@
             <object-type name="GameTitle" sid="4852799306981746">
                 <plugin id="Text" />
             </object-type>
-            <object-type name="ClickTosStart" sid="4785696855877438">
+            <object-type name="ClickToStart" sid="4785696855877438">
                 <plugin id="Text" />
             </object-type>
         </object-folder>
@@ -79,12 +79,14 @@
     </object-folder>
     <families />
     <layout-folder expanded="1">
-        <layout>Main Game.xml</layout>
         <layout>Start.xml</layout>
+        <layout>Main Game.xml</layout>
+        <layout>Great Job.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
         <event-sheet>Main Game.xml</event-sheet>
         <event-sheet>Start.xml</event-sheet>
+        <event-sheet>Great Job.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="1" />

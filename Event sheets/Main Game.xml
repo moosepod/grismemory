@@ -6,6 +6,7 @@
         <variable comment="Used in checking whether to clear out cards" constant="0" name="last_card_type" sid="7153345795721976" static="0" type="number">0</variable>
         <variable comment="ID of first selected card" constant="0" name="first_card_id" sid="7282463062295762" static="0" type="number">0</variable>
         <variable comment="Number of currently flipped cards" constant="0" name="flipped_card_count" sid="309700989141021" static="0" type="number">0</variable>
+        <variable comment="Number of remaining cards" constant="0" name="card_count" sid="8391408909914578" static="0" type="number">0</variable>
         <variable comment="Flag used in card selection conditional" constant="0" name="selected_frame" sid="1421405033998842" static="0" type="number">0</variable>
         <event-block sid="1689121547883047">
             <conditions>
@@ -235,8 +236,27 @@
                     <param id="0" name="Variable">flipped_card_count</param>
                     <param id="1" name="Value">0</param>
                 </action>
+                <action id="-9" name="Set value" sid="5404003345364393" type="System">
+                    <param id="0" name="Variable">card_count</param>
+                    <param id="1" name="Value">0</param>
+                </action>
             </actions>
             <sub-events>
+                <event-block sid="2347436567503048">
+                    <conditions>
+                        <condition id="-24" name="For Each (ordered)" sid="6404107173149387" type="System">
+                            <param id="0" name="Object">Card</param>
+                            <param id="1" name="Expression">0</param>
+                            <param id="2" name="Order">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="3075956848465472" type="System">
+                            <param id="0" name="Variable">card_count</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
                 <event-block sid="4147456202536603">
                     <conditions>
                         <condition id="-13" name="Pick nth instance" sid="2890202838761079" type="System">
@@ -246,6 +266,10 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="6874043415969677" type="Card" />
+                        <action id="-11" name="Subtract from" sid="1235062479622358" type="System">
+                            <param id="0" name="Variable">card_count</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="4259564703164528">
@@ -257,6 +281,24 @@
                     </conditions>
                     <actions>
                         <action id="-9" name="Destroy" sid="8716852993718084" type="Card" />
+                        <action id="-11" name="Subtract from" sid="109746691272465" type="System">
+                            <param id="0" name="Variable">card_count</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3536599005321958">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="5446979419949629" type="System">
+                            <param id="0" name="First value">card_count</param>
+                            <param id="1" name="Comparison">3</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-25" name="Go to layout (by name)" sid="1295154677267808" type="System">
+                            <param id="0" name="Layout">&quot;Great Job&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
